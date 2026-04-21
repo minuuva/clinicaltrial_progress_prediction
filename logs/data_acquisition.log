@@ -1,0 +1,197 @@
+2026-04-07 17:17:37,974  INFO      Logging initialized.
+2026-04-07 17:18:18,265  INFO      Configuration set. Target: 2000 documents → ../data/raw/clinical_trials_raw.json
+2026-04-07 17:19:10,602  INFO      Starting acquisition — target: 2000 documents
+2026-04-07 17:19:10,911  INFO      API reports 365704 total documents available for this filter.
+2026-04-07 17:19:10,911  INFO      Page   1 | fetched 200 | running total   200 / 2000
+2026-04-07 17:19:11,415  INFO      Page   2 | fetched 200 | running total   400 / 2000
+2026-04-07 17:19:11,926  INFO      Page   3 | fetched 200 | running total   600 / 2000
+2026-04-07 17:19:12,455  INFO      Page   4 | fetched 200 | running total   800 / 2000
+2026-04-07 17:19:12,948  INFO      Page   5 | fetched 200 | running total  1000 / 2000
+2026-04-07 17:19:13,451  INFO      Page   6 | fetched 200 | running total  1200 / 2000
+2026-04-07 17:19:14,014  INFO      Page   7 | fetched 200 | running total  1400 / 2000
+2026-04-07 17:19:14,556  INFO      Page   8 | fetched 200 | running total  1600 / 2000
+2026-04-07 17:19:15,106  INFO      Page   9 | fetched 200 | running total  1800 / 2000
+2026-04-07 17:19:15,635  INFO      Page  10 | fetched 200 | running total  2000 / 2000
+2026-04-07 17:19:15,893  INFO      Acquisition complete. Collected 2000 documents.
+2026-04-07 17:19:33,896  INFO      ── Verification ─────────────────────────────────────────────
+2026-04-07 17:19:33,898  ERROR     Could not reload file: [Errno 2] No such file or directory: '../data/raw/clinical_trials_raw.json'
+2026-04-07 17:20:00,282  INFO      Saved 2000 documents to ../data/raw/clinical_trials_raw.json (67.97 MB)
+2026-04-07 17:20:12,605  INFO      ── Verification ─────────────────────────────────────────────
+2026-04-07 17:20:13,142  INFO      Documents on disk : 2000
+2026-04-07 17:20:13,143  INFO      Scale check >10    : PASS ✓  (2000 documents)
+2026-04-07 17:20:13,143  INFO      Scale check >100   : PASS ✓  (2000 documents)
+2026-04-07 17:20:13,144  INFO      Scale check >1000  : PASS ✓  (2000 documents)
+2026-04-07 17:20:13,145  INFO      Missing nctId      : 0
+2026-04-07 17:20:13,146  INFO      Missing status     : 0
+2026-04-07 17:20:13,146  INFO      Status breakdown   :
+2026-04-07 17:20:13,146  INFO        COMPLETED       :  1742  ( 87.1%)
+2026-04-07 17:20:13,146  INFO        TERMINATED      :   168  (  8.4%)
+2026-04-07 17:20:13,147  INFO        WITHDRAWN       :    90  (  4.5%)
+2026-04-07 17:20:13,147  INFO      Top-level keys in first doc : ['protocolSection', 'derivedSection', 'hasResults']
+2026-04-07 17:20:13,147  INFO      protocolSection keys        : ['identificationModule', 'statusModule', 'sponsorCollaboratorsModule', 'oversightModule', 'descriptionModule', 'conditionsModule', 'designModule', 'armsInterventionsModule', 'outcomesModule', 'eligibilityModule', 'contactsLocationsModule', 'ipdSharingStatementModule']
+2026-04-07 17:20:13,147  INFO      ── All verification checks complete ─────────────────────────
+2026-04-07 17:20:13,147  INFO      RESULT: Dataset contains 2000 documents — exceeds 1000-document rubric threshold.
+2026-04-07 17:22:34,990  INFO      Logging initialized.
+2026-04-07 17:22:35,002  INFO      Configuration set. 700 docs per class × 3 classes = 2100 total → ../data/raw/clinical_trials_raw.json
+2026-04-07 17:22:35,016  INFO      Starting balanced acquisition — 3 classes × 700 docs = 2100 total
+2026-04-07 17:22:35,020  INFO        Fetching COMPLETED    — target: 700
+2026-04-07 17:22:35,328  INFO          API reports 316331 documents available for status=COMPLETED
+2026-04-07 17:22:35,328  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:22:35,830  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:22:36,310  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:22:36,850  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:22:37,101  INFO        Done COMPLETED    — collected 700 documents.
+2026-04-07 17:22:37,103  INFO      Running total after COMPLETED    : 700
+2026-04-07 17:22:37,104  INFO        Fetching TERMINATED   — target: 700
+2026-04-07 17:22:37,385  INFO          API reports 33193 documents available for status=TERMINATED
+2026-04-07 17:22:37,386  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:22:37,946  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:22:38,577  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:22:39,077  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:22:39,333  INFO        Done TERMINATED   — collected 700 documents.
+2026-04-07 17:22:39,334  INFO      Running total after TERMINATED   : 1400
+2026-04-07 17:22:39,335  INFO        Fetching WITHDRAWN    — target: 700
+2026-04-07 17:22:39,601  INFO          API reports 16180 documents available for status=WITHDRAWN
+2026-04-07 17:22:39,602  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:22:40,083  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:22:40,557  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:22:41,093  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:22:41,349  INFO        Done WITHDRAWN    — collected 700 documents.
+2026-04-07 17:22:41,351  INFO      Running total after WITHDRAWN    : 2100
+2026-04-07 17:22:41,358  INFO      Shuffle complete (seed=42). Final collection: 2100 documents.
+2026-04-07 17:22:41,435  INFO      Starting acquisition — target: 2000 documents
+2026-04-07 17:22:41,500  WARNING   HTTP N/A on attempt 1/3 — retrying in 2.0s
+2026-04-07 17:22:43,581  WARNING   HTTP N/A on attempt 2/3 — retrying in 4.0s
+2026-04-07 17:22:47,670  WARNING   HTTP N/A on attempt 3/3 — retrying in 8.0s
+2026-04-07 17:24:10,359  INFO      Starting balanced acquisition — 3 classes × 700 docs = 2100 total
+2026-04-07 17:24:10,363  INFO        Fetching COMPLETED    — target: 700
+2026-04-07 17:24:10,645  INFO          API reports 316331 documents available for status=COMPLETED
+2026-04-07 17:24:10,646  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:24:11,161  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:24:11,656  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:24:12,460  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:24:12,715  INFO        Done COMPLETED    — collected 700 documents.
+2026-04-07 17:24:12,719  INFO      Running total after COMPLETED    : 700
+2026-04-07 17:24:12,720  INFO        Fetching TERMINATED   — target: 700
+2026-04-07 17:24:13,001  INFO          API reports 33193 documents available for status=TERMINATED
+2026-04-07 17:24:13,002  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:24:13,581  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:24:14,152  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:24:14,642  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:24:14,894  INFO        Done TERMINATED   — collected 700 documents.
+2026-04-07 17:24:14,897  INFO      Running total after TERMINATED   : 1400
+2026-04-07 17:24:14,898  INFO        Fetching WITHDRAWN    — target: 700
+2026-04-07 17:24:15,132  INFO          API reports 16180 documents available for status=WITHDRAWN
+2026-04-07 17:24:15,133  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:24:15,639  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:24:16,138  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:24:16,616  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:24:16,869  INFO        Done WITHDRAWN    — collected 700 documents.
+2026-04-07 17:24:16,870  INFO      Running total after WITHDRAWN    : 2100
+2026-04-07 17:24:16,871  INFO      Shuffle complete (seed=42). Final collection: 2100 documents.
+2026-04-07 17:24:22,785  INFO      Saved 2100 documents to ../data/raw/clinical_trials_raw.json (61.47 MB)
+2026-04-07 17:24:24,862  INFO      ── Verification ─────────────────────────────────────────────
+2026-04-07 17:24:25,381  INFO      Documents on disk : 2100
+2026-04-07 17:24:25,382  INFO      Scale check >10    : PASS ✓  (2100 documents)
+2026-04-07 17:24:25,382  INFO      Scale check >100   : PASS ✓  (2100 documents)
+2026-04-07 17:24:25,382  INFO      Scale check >1000  : PASS ✓  (2100 documents)
+2026-04-07 17:24:25,384  INFO      Missing nctId      : 0
+2026-04-07 17:24:25,384  INFO      Missing status     : 0
+2026-04-07 17:24:25,384  INFO      Class balance:
+2026-04-07 17:24:25,384  INFO        TERMINATED      :   700  ( 33.3%)  ████████████████
+2026-04-07 17:24:25,384  INFO        COMPLETED       :   700  ( 33.3%)  ████████████████
+2026-04-07 17:24:25,385  INFO        WITHDRAWN       :   700  ( 33.3%)  ████████████████
+2026-04-07 17:24:25,385  INFO      Balance ratio (min/max): 1.000  (1.0 = perfect)
+2026-04-07 17:24:25,385  INFO      Top-level keys in first doc : ['protocolSection', 'derivedSection', 'hasResults']
+2026-04-07 17:24:25,385  INFO      ── All verification checks complete ─────────────────────────
+2026-04-07 17:24:25,386  INFO      RESULT: 2100 documents across 3 classes — exceeds 1000-document rubric threshold.
+2026-04-07 17:27:24,065  INFO      Logging initialized.
+2026-04-07 17:27:24,074  INFO      Configuration set. 700 docs per class × 3 classes = 2100 total → ../data/raw/clinical_trials_raw.json
+2026-04-07 17:27:24,083  INFO      Starting balanced acquisition — 3 classes × 700 docs = 2100 total
+2026-04-07 17:27:24,084  INFO        Fetching COMPLETED    — target: 700
+2026-04-07 17:27:24,485  INFO          API reports 316331 documents available for status=COMPLETED
+2026-04-07 17:27:24,485  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:27:25,003  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:27:25,520  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:27:26,023  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:27:26,274  INFO        Done COMPLETED    — collected 700 documents.
+2026-04-07 17:27:26,275  INFO      Running total after COMPLETED    : 700
+2026-04-07 17:27:26,275  INFO        Fetching TERMINATED   — target: 700
+2026-04-07 17:27:26,556  INFO          API reports 33193 documents available for status=TERMINATED
+2026-04-07 17:27:26,557  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:27:27,137  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:27:27,668  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:27:28,212  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:27:28,468  INFO        Done TERMINATED   — collected 700 documents.
+2026-04-07 17:27:28,474  INFO      Running total after TERMINATED   : 1400
+2026-04-07 17:27:28,475  INFO        Fetching WITHDRAWN    — target: 700
+2026-04-07 17:27:28,707  INFO          API reports 16180 documents available for status=WITHDRAWN
+2026-04-07 17:27:28,708  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-07 17:27:29,206  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-07 17:27:29,698  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-07 17:27:30,209  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-07 17:27:30,463  INFO        Done WITHDRAWN    — collected 700 documents.
+2026-04-07 17:27:30,467  INFO      Running total after WITHDRAWN    : 2100
+2026-04-07 17:27:30,470  INFO      Shuffle complete (seed=42). Final collection: 2100 documents.
+2026-04-07 17:27:31,675  INFO      Saved 2100 documents to ../data/raw/clinical_trials_raw.json (61.47 MB)
+2026-04-07 17:27:31,682  INFO      ── Verification ─────────────────────────────────────────────
+2026-04-07 17:27:32,479  INFO      Documents on disk : 2100
+2026-04-07 17:27:32,480  INFO      Scale check >10    : PASS ✓  (2100 documents)
+2026-04-07 17:27:32,481  INFO      Scale check >100   : PASS ✓  (2100 documents)
+2026-04-07 17:27:32,481  INFO      Scale check >1000  : PASS ✓  (2100 documents)
+2026-04-07 17:27:32,483  INFO      Missing nctId      : 0
+2026-04-07 17:27:32,483  INFO      Missing status     : 0
+2026-04-07 17:27:32,484  INFO      Class balance:
+2026-04-07 17:27:32,484  INFO        TERMINATED      :   700  ( 33.3%)  ████████████████
+2026-04-07 17:27:32,484  INFO        COMPLETED       :   700  ( 33.3%)  ████████████████
+2026-04-07 17:27:32,484  INFO        WITHDRAWN       :   700  ( 33.3%)  ████████████████
+2026-04-07 17:27:32,485  INFO      Balance ratio (min/max): 1.000  (1.0 = perfect)
+2026-04-07 17:27:32,485  INFO      Top-level keys in first doc : ['protocolSection', 'derivedSection', 'hasResults']
+2026-04-07 17:27:32,485  INFO      ── All verification checks complete ─────────────────────────
+2026-04-07 17:27:32,485  INFO      RESULT: 2100 documents across 3 classes — exceeds 1000-document rubric threshold.
+2026-04-20 22:44:08,872  INFO      Logging initialized.
+2026-04-20 22:44:33,207  INFO      Configuration set. 700 docs per class × 3 classes = 2100 total → ds4320_project2.clinical_trials
+2026-04-20 22:44:42,471  INFO      Starting balanced acquisition — 3 classes × 700 docs = 2100 total
+2026-04-20 22:44:42,472  INFO        Fetching COMPLETED    — target: 700
+2026-04-20 22:44:42,742  INFO          API reports 317334 docs available for status=COMPLETED
+2026-04-20 22:44:42,742  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-20 22:44:43,242  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-20 22:44:43,747  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-20 22:44:44,245  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-20 22:44:44,500  INFO        Done COMPLETED    — collected 700 documents.
+2026-04-20 22:44:44,503  INFO      Running total after COMPLETED    : 700
+2026-04-20 22:44:44,504  INFO        Fetching TERMINATED   — target: 700
+2026-04-20 22:44:44,810  INFO          API reports 33311 docs available for status=TERMINATED
+2026-04-20 22:44:44,811  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-20 22:44:45,340  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-20 22:44:45,890  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-20 22:44:46,439  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-20 22:44:46,690  INFO        Done TERMINATED   — collected 700 documents.
+2026-04-20 22:44:46,694  INFO      Running total after TERMINATED   : 1400
+2026-04-20 22:44:46,695  INFO        Fetching WITHDRAWN    — target: 700
+2026-04-20 22:44:46,926  INFO          API reports 16219 docs available for status=WITHDRAWN
+2026-04-20 22:44:46,927  INFO          Page   1 | fetched 200 | running total   200 / 700
+2026-04-20 22:44:47,505  INFO          Page   2 | fetched 200 | running total   400 / 700
+2026-04-20 22:44:48,032  INFO          Page   3 | fetched 200 | running total   600 / 700
+2026-04-20 22:44:48,543  INFO          Page   4 | fetched 100 | running total   700 / 700
+2026-04-20 22:44:48,798  INFO        Done WITHDRAWN    — collected 700 documents.
+2026-04-20 22:44:48,799  INFO      Running total after WITHDRAWN    : 2100
+2026-04-20 22:44:48,801  INFO      Shuffle complete (seed=42). Final collection: 2100 documents.
+2026-04-20 22:44:50,834  INFO      Connecting to MongoDB Atlas → ds4320_project2.clinical_trials
+2026-04-20 22:46:30,812  INFO      Connecting to MongoDB Atlas → ds4320_project2.clinical_trials
+2026-04-20 22:46:31,243  INFO      Ping successful — Atlas connection confirmed.
+2026-04-20 22:46:31,258  INFO      Existing collection dropped (fresh load).
+2026-04-20 22:46:37,213  INFO      Inserted 2100 documents into ds4320_project2.clinical_trials
+2026-04-20 22:46:38,860  INFO      ── Verification (MongoDB) ────────────────────────────────────
+2026-04-20 22:46:39,114  INFO      Documents in Atlas : 2100
+2026-04-20 22:46:39,115  INFO      Scale check >10    : PASS ✓  (2100 documents)
+2026-04-20 22:46:39,115  INFO      Scale check >100   : PASS ✓  (2100 documents)
+2026-04-20 22:46:39,115  INFO      Scale check >1000  : PASS ✓  (2100 documents)
+2026-04-20 22:46:39,131  INFO      Class balance:
+2026-04-20 22:46:39,132  INFO        TERMINATED      :   700  ( 33.3%)  ████████████████
+2026-04-20 22:46:39,132  INFO        WITHDRAWN       :   700  ( 33.3%)  ████████████████
+2026-04-20 22:46:39,132  INFO        COMPLETED       :   700  ( 33.3%)  ████████████████
+2026-04-20 22:46:39,133  INFO      Balance ratio (min/max): 1.000  (1.0 = perfect)
+2026-04-20 22:46:39,149  INFO      Top-level keys in sample doc : ['protocolSection', 'derivedSection', 'hasResults']
+2026-04-20 22:46:39,149  INFO      ── All verification checks complete ─────────────────────────
+2026-04-20 22:46:39,150  INFO      RESULT: 2100 documents across 3 classes — exceeds 1000-document rubric threshold.
