@@ -352,5 +352,20 @@ entirely by rare extreme values in the right tail.
 
 ## Repository Structure
 ```text
-[todo]
+clinicaltrial_progress_prediction/
+├── README.md                          # This file — project overview and metadata
+├── PRESS_RELEASE.md                   # Non-technical press release with visualization
+├── LICENSE                            # MIT License
+├── .gitignore                         # Excludes .env, logs/, __pycache__/
+├── code/
+│   ├── data_acquisition.ipynb         # Fetches 2,100 trials from ClinicalTrials.gov API and loads into MongoDB Atlas
+│   ├── press_release_viz.ipynb        # Generates press release visualization (enrollment + phase charts)
+│   ├── solution_pipeline.ipynb        # Full ML pipeline: data prep → feature engineering → Random Forest → visualization
+│   ├── solution_pipeline.md           # Markdown export of the pipeline notebook
+├── visualizations/
+│   ├── pipeline_results.png           # Two-panel figure: confusion matrix + feature importances
+│   └── press_release_viz.png          # Press release chart: enrollment distributions + phase profiles
+└── logs/                              # Runtime logs (gitignored)
+    ├── data_acquisition.log
+    └── solution_pipeline.log
 ```
