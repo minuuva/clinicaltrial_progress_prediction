@@ -356,7 +356,7 @@ clinicaltrial_progress_prediction/
 ├── README.md                          # This file — project overview and metadata
 ├── PRESS_RELEASE.md                   # Non-technical press release with visualization
 ├── LICENSE                            # MIT License
-├── .gitignore                         # Excludes .env, logs/, __pycache__/
+├── .gitignore                         # Excludes .env, __pycache__/
 ├── code/
 │   ├── data_acquisition.ipynb         # Fetches 2,100 trials from ClinicalTrials.gov API and loads into MongoDB Atlas
 │   ├── press_release_viz.ipynb        # Generates press release visualization (enrollment + phase charts)
